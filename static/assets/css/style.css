@@ -491,10 +491,10 @@ main {
   transition: color var(--transition-1);
 }
 
-.navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+/* .navbar-link:hover,
+.navbar-link:focus { color:#c41144 } */
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active { color: #c41144; }
 
 
 
@@ -944,7 +944,7 @@ main {
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 43px;
   margin-bottom: 10px;
 }
 
