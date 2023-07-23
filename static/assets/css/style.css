@@ -1904,3 +1904,15 @@ textarea.form-input::-webkit-resizer { display: none; }
     max-width: 335px; 
   }
 }
+
+.typewriter {
+  white-space: nowrap; /* Keep the text in a single line */
+  overflow: hidden; /* Hide any content that overflows */
+  border-right: 0.15em solid #000; /* Add a cursor-like blinking effect */
+  width: 0; /* Set initial width to 0 */
+  animation: typing 3s steps(20) forwards;
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
