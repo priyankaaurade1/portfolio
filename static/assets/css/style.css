@@ -39,11 +39,7 @@
     hsl(45, 100%, 71%) 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
-  --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+  --bg-gradient-yellow-2: linear-gradient( 135deg, hsl(339.4deg 87.88% 58.41%) 0%, hsla(35, 100%, 68%, 0) 59.86% ), hsl(339.09deg 97.06% 86.67%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(0, 0%, 25%) 0%, 
@@ -205,7 +201,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--orange-yellow-crayola);
+  color: #d21456;
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -354,15 +350,6 @@ main {
   margin-bottom: 10px;
 }
 
-.info-content .title {
-  color: hsl(0deg 0% 0%);
-  background: #fd70a1;
-  font-size: var(--fs-10);
-  font-weight: var(--fw-400);
-  width: max-content;
-  padding: 3px 12px;
-  border-radius: 8px;
-}
 
 .info_more-btn {
   position: absolute;
@@ -468,10 +455,10 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsl(340.71deg 100% 94.51%);
+  background: linear-gradient( 135deg, hsl(339.4deg 87.88% 58.41%) 0%, hsla(35, 100%, 68%, 0) 59.86% ), hsl(339.09deg 97.06% 86.67%);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
-  border-radius: 12px 12px 0 0;
+  border-radius: 12px 12px 0 0; 
   box-shadow: pink;
   z-index: 5;
 }
@@ -1908,9 +1895,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 .typewriter {
   white-space: nowrap; /* Keep the text in a single line */
   overflow: hidden; /* Hide any content that overflows */
+  font-weight: 500;
+  text-align: center;
   border-right: 0.15em solid #000; /* Add a cursor-like blinking effect */
   width: 0; /* Set initial width to 0 */
-  animation: typing 3s steps(20) forwards;
+  animation: typing 3s steps(10) forwards;
 }
 
 @keyframes typing {
